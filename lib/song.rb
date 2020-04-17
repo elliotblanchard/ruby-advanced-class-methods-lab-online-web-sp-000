@@ -35,7 +35,7 @@ class Song
       self.create_by_name(name)
     end
   end
-  
+
   def save
     self.class.all << self
   end
