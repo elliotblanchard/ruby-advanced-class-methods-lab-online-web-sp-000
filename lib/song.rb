@@ -34,7 +34,7 @@ class Song
 
   def self.create_from_filename(filename)
     song = self.new_from_filename(filename)
-      self.all << song
+    self.all << song
   end
 
   def self.find_by_name(name)
