@@ -36,6 +36,10 @@ class Song
     end
   end
 
+  def alphabetical
+    self.all.sort
+  end
+
   def save
     self.class.all << self
   end
