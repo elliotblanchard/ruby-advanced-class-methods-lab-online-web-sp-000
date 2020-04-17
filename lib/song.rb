@@ -32,6 +32,11 @@ class Song
     song
   end
 
+  def self.create_from_filename(filename)
+    song = self.new_from_filename(filename)
+      self.all << song
+  end
+
   def self.find_by_name(name)
     self.all.find{|song| song.name == name}
   end
